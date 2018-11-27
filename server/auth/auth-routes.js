@@ -2,8 +2,6 @@ let router = require('express').Router()
 let Users = require('../models/User')
 
 // login
-
-
 // creating a new session
 router.post('/login', (req, res, next) => {
   Users.findOne({ email: req.body.email })
