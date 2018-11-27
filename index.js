@@ -34,6 +34,6 @@ server.use('*', (error, req, res, next) => {
 })
 
 // sets server to listen on your specific port 
-server.listen(port, () => {
-  console.log("SERVER RUNNING ON PORT: ", port)
+server.listen(PORT, () => {
+  console.log("SERVER RUNNING ON PORT: ", PORT)
 })
