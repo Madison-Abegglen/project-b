@@ -11,11 +11,12 @@ server.use(bp.urlencoded({ extended: true }))
 server.use(express.static(__dirname + '/public')) // connection to front-end
 
 // routes
-let userRoutes = require('./server/auth/auth-routes')
+let auth = require('./server/auth/auth-routes')
 let postRoutes = require('./server/routes/post-routes')
 let commentRoutes = require('./server/routes/comment-routes')
 
-server.use('/account', userRoutes)
+server.use(auth.session)
+server.use('/account', auth.router)
 server.use('/api/posts', postRoutes)
 server.use('/api/comments', commentRoutes)
 
