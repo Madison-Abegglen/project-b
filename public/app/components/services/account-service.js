@@ -5,6 +5,6 @@ const accApi = axios.create({
 
 let _user = {}
 
-export default class AccountService() {
+export default class AccountService {
 
 }

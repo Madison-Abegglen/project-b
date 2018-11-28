@@ -6,6 +6,6 @@ const contApi = axios.create({
 let _posts = []
 let _comments = []
 
-export default class ContentService() {
+export default class ContentService {
 
 }
