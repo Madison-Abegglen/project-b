@@ -1,11 +1,10 @@
-import PostController from './components/posts/post-controller.js'
-import CommentController from './components/comments/comment-controller.js'
+import AppController from './components/app-controller.js'
 console.log("app is running")
 
 class App {
   constructor() {
     this.controllers = {
-      postController: new PostController()
+      appController: new AppController()
     }
   }
 }
